@@ -147,10 +147,12 @@ function createArticle(dataObj)
   artDiv.appendChild(artP3);
   artDiv.appendChild(artSpan);
 
-  //event listener
+  //event listener for articles
   artSpan.addEventListener('click', () =>
   {
     artDiv.classList.toggle('article-open');
+
+    //checks to see if article-open is active to display readmore or less
     if(artDiv.classList.contains('article-open'))
     {
       artSpan.textContent = "Click to read less";
@@ -161,9 +163,10 @@ function createArticle(dataObj)
     }
   })
   
-  //return end result
+  //return component
   return artDiv;
 }
+
 //put the news articles in the container div
 const articleContainer = document.querySelector('.articles');
 
