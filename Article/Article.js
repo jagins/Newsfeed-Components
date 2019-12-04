@@ -90,18 +90,18 @@ const data = [
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
   
-  <div class="article">
-    <h2>{title of the article}</h2>
-    <p class="date">{date of the article}</p>
+  <div class="article">*
+    <h2>{title of the article}</h2>*
+    <p class="date">{date of the article}</p>*
 
-    {three separate paragraph elements}
+    {three separate paragraph elements}*
 
-    <span class='expandButton'></span>
+    <span class='expandButton'></span>*
   </div>
 
   Hint: You will need to use createElement more than once here!
 
-  Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
+  Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.*
 
   Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
 
@@ -112,3 +112,58 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+//step 1 create a function that creates a componet
+function createArticle(dataObj)
+{
+  //create indiv elements. referer to above template
+  const artDiv = document.createElement('div');
+  const artH2 = document.createElement('h2');
+  const artDate = document.createElement('p');
+  const artP1 = document.createElement('p');
+  const artP2 = document.createElement('p');
+  const artP3 = document.createElement('p');
+  const artSpan = document.createElement('span');
+
+  //add classes to elements
+  artDiv.classList.add('article');
+  artDate.classList.add('date');
+  artSpan.classList.add('expandButton');
+
+  //fill in the proper text
+  //data = title, date, p1, p2, p3
+  artH2.textContent = dataObj.title;
+  artDate.textContent = dataObj.date;
+  artP1.textContent = dataObj.firstParagraph;
+  artP2.textContent = dataObj.secondParagraph;
+  artP3.textContent = dataObj.thirdParagraph;
+  artSpan.textContent = 'Click to read more';
+
+  //put the component together
+  artDiv.appendChild(artH2);
+  artDiv.appendChild(artDate);
+  artDiv.appendChild(artP1);
+  artDiv.appendChild(artP2);
+  artDiv.appendChild(artP3);
+  artDiv.appendChild(artSpan);
+
+  //event listener
+  artSpan.addEventListener('click', () =>
+  {
+    artDiv.classList.toggle('article-open');
+    artSpan.textContent = "Click to read less";
+  })
+  //return end result
+  return artDiv;
+}
+
+const articleContainer = document.querySelector('.articles');
+const newArticleArray = data.map(dataArticle =>
+{
+  return articleContainer.appendChild(createArticle(dataArticle));
+});
+
+newArticleArray.forEach(item =>
+{
+  articleContainer.appendChild(item);
+});
