@@ -153,16 +153,20 @@ function createArticle(dataObj)
     artDiv.classList.toggle('article-open');
     artSpan.textContent = "Click to read less";
   })
+  
   //return end result
   return artDiv;
 }
-
+//put the news articles in the container div
 const articleContainer = document.querySelector('.articles');
+
+//creates a new array for the news articles to be rendered later
 const newArticleArray = data.map(dataArticle =>
 {
   return articleContainer.appendChild(createArticle(dataArticle));
 });
 
+//render news articles
 newArticleArray.forEach(item =>
 {
   articleContainer.appendChild(item);
