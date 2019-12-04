@@ -85,6 +85,30 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+
+  {
+    title: 'Tottenham HotSpurs Sack Manager',
+    date: 'Dec 4th, 2019',
+    firstParagraph: `Spicy jalapeno bacon ipsum dolor amet laborum non beef, id pork loin prosciutto incididunt ad. Short ribs shoulder shank velit prosciutto, aliqua non chislic rump. Lorem occaecat picanha, pork belly ball tip pork turkey ham hock non sed salami. Drumstick beef ribs officia chicken commodo, picanha mollit consectetur anim sirloin burgdoggen pork belly. Ut non porchetta anim incididunt ribeye aliquip minim turkey. Irure consequat occaecat excepteur.`,
+    secondParagraph: `Labore turducken sirloin, esse adipisicing pastrami meatball sint duis pig kielbasa. Sed brisket aute dolore leberkas pork belly occaecat ipsum short ribs bacon jerky strip steak qui. Biltong ham hock do chislic, dolore beef kielbasa incididunt non. Capicola burgdoggen elit biltong exercitation, jowl lorem ham hock. Rump labore lorem buffalo dolore, bresaola mollit irure tempor deserunt ut turkey pork belly aute beef. Occaecat corned beef incididunt in aute ut cupidatat do anim hamburger turducken exercitation pork belly. Irure qui deserunt magna id ex short loin.`,
+    thirdParagraph: `Meatloaf flank pork loin, strip steak dolore frankfurter jowl ball tip. Do qui strip steak shoulder shankle drumstick. Mollit dolore bresaola non, veniam quis leberkas esse lorem aute jowl est sed ground round tri-tip. Venison in sunt do, sed fugiat nostrud reprehenderit cow turkey biltong in. Venison ut proident labore.`
+  },
+
+  {
+    title: "Cupcakes are America's Favorie Dessert",
+    date: 'Dec 3rd, 2019',
+    firstParagraph: `Cookie pie biscuit candy canes. Halvah I love I love chupa chups. Tiramisu chocolate bar jelly-o topping candy canes. Oat cake icing marshmallow. Danish pie tootsie roll candy canes. Cupcake candy bear claw dessert carrot cake danish cheesecake. Cotton candy toffee I love donut caramels cookie. Halvah sesame snaps chocolate cotton candy. Gummies sweet marshmallow I love brownie carrot cake. Sweet roll halvah I love topping lollipop chocolate.`,
+    secondParagraph: `Tiramisu chupa chups apple pie caramels pie jelly beans. Tiramisu macaroon carrot cake. I love sugar plum gummies topping tootsie roll. Caramels fruitcake sugar plum jelly-o jelly beans chupa chups danish. Candy canes sweet roll lemon drops oat cake tiramisu chupa chups cookie sesame snaps cake. Muffin cookie brownie I love pastry donut apple pie. I love jelly I love pastry oat cake I love. Danish chocolate cake gummies I love powder jelly beans bonbon. Caramels I love dragée marzipan.`,
+    thirdParagraph: `Cheesecake wafer liquorice jelly-o donut lemon drops. Marshmallow chocolate bear claw chocolate. Danish donut I love. I love jelly marshmallow biscuit powder lemon drops gummi bears fruitcake. Candy canes danish cheesecake cotton candy bear claw. Cake dessert bear claw caramels marzipan sugar plum. Cotton candy jujubes gummi bears donut cake. Tart jelly-o dragée candy.`
+  },
+
+  {
+    title: 'Youtube Finally Bans BroScienceLife Channel',
+    date: 'Sept 1st, 2019',
+    firstParagraph: `Bro ipsum dolor sit amet shreddin nose press brain bucket heli brain bucket corn free ride frontside face plant roadie taco glove. Butter gnar gear jammer epic jib pow. Whistler chowder dust on crust bomb hole, hammerhead flow rail. Skinny greasy Whistler sketching clipless.`,
+    secondParagraph: `Piste pipe air flow hot dogging travel noodle presta death cookies ollie poaching huckfest twister dirtbag. Whistler roadie afterbang rock-ectomy. Skid pipe corn, pillow popping stunt stomp trail swag couloir groomer chillax back country cork dope chain ring grab. Granny gear hot dogging bonk, schwag shuttle Whistler whip grind yard sale wheels flow.`,
+    thirdParagraph: `Butter single track pow bonk dirtbag sketching wheelie caballerial chain ring wack line skinny gear jammer slash. Misty fatty reverse camber ride back country, daffy huck. Epic flow liftie, spin taco glove trail swag huckfest back country poaching single track whip yard sale ACL. Bail heli chowder big ring cornice betty. Booter drop air scream corduroy dust on crust. Bro frontside park slash nose dirt line manny huck schraeder pillow popping T-bar crank air.`
   }
 ];
 
