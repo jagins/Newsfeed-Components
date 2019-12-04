@@ -151,7 +151,14 @@ function createArticle(dataObj)
   artSpan.addEventListener('click', () =>
   {
     artDiv.classList.toggle('article-open');
-    artSpan.textContent = "Click to read less";
+    if(artDiv.classList.contains('article-open'))
+    {
+      artSpan.textContent = "Click to read less";
+    }
+    else
+    {
+      artSpan.textContent = "Click to read more";
+    }
   })
   
   //return end result
