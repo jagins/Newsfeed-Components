@@ -197,7 +197,7 @@ const articleContainer = document.querySelector('.articles');
 //creates a new array for the news articles to be rendered later
 const newArticleArray = data.map(dataArticle =>
 {
-  return articleContainer.appendChild(createArticle(dataArticle));
+  return createArticle(dataArticle);
 });
 
 //render news articles
