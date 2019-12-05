@@ -85,23 +85,47 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+
+  {
+    title: 'Tottenham HotSpurs Sack Manager',
+    date: 'Dec 4th, 2019',
+    firstParagraph: `Spicy jalapeno bacon ipsum dolor amet laborum non beef, id pork loin prosciutto incididunt ad. Short ribs shoulder shank velit prosciutto, aliqua non chislic rump. Lorem occaecat picanha, pork belly ball tip pork turkey ham hock non sed salami. Drumstick beef ribs officia chicken commodo, picanha mollit consectetur anim sirloin burgdoggen pork belly. Ut non porchetta anim incididunt ribeye aliquip minim turkey. Irure consequat occaecat excepteur.`,
+    secondParagraph: `Labore turducken sirloin, esse adipisicing pastrami meatball sint duis pig kielbasa. Sed brisket aute dolore leberkas pork belly occaecat ipsum short ribs bacon jerky strip steak qui. Biltong ham hock do chislic, dolore beef kielbasa incididunt non. Capicola burgdoggen elit biltong exercitation, jowl lorem ham hock. Rump labore lorem buffalo dolore, bresaola mollit irure tempor deserunt ut turkey pork belly aute beef. Occaecat corned beef incididunt in aute ut cupidatat do anim hamburger turducken exercitation pork belly. Irure qui deserunt magna id ex short loin.`,
+    thirdParagraph: `Meatloaf flank pork loin, strip steak dolore frankfurter jowl ball tip. Do qui strip steak shoulder shankle drumstick. Mollit dolore bresaola non, veniam quis leberkas esse lorem aute jowl est sed ground round tri-tip. Venison in sunt do, sed fugiat nostrud reprehenderit cow turkey biltong in. Venison ut proident labore.`
+  },
+
+  {
+    title: "Cupcakes are America's Favorie Dessert",
+    date: 'Dec 3rd, 2019',
+    firstParagraph: `Cookie pie biscuit candy canes. Halvah I love I love chupa chups. Tiramisu chocolate bar jelly-o topping candy canes. Oat cake icing marshmallow. Danish pie tootsie roll candy canes. Cupcake candy bear claw dessert carrot cake danish cheesecake. Cotton candy toffee I love donut caramels cookie. Halvah sesame snaps chocolate cotton candy. Gummies sweet marshmallow I love brownie carrot cake. Sweet roll halvah I love topping lollipop chocolate.`,
+    secondParagraph: `Tiramisu chupa chups apple pie caramels pie jelly beans. Tiramisu macaroon carrot cake. I love sugar plum gummies topping tootsie roll. Caramels fruitcake sugar plum jelly-o jelly beans chupa chups danish. Candy canes sweet roll lemon drops oat cake tiramisu chupa chups cookie sesame snaps cake. Muffin cookie brownie I love pastry donut apple pie. I love jelly I love pastry oat cake I love. Danish chocolate cake gummies I love powder jelly beans bonbon. Caramels I love dragée marzipan.`,
+    thirdParagraph: `Cheesecake wafer liquorice jelly-o donut lemon drops. Marshmallow chocolate bear claw chocolate. Danish donut I love. I love jelly marshmallow biscuit powder lemon drops gummi bears fruitcake. Candy canes danish cheesecake cotton candy bear claw. Cake dessert bear claw caramels marzipan sugar plum. Cotton candy jujubes gummi bears donut cake. Tart jelly-o dragée candy.`
+  },
+
+  {
+    title: 'Youtube Finally Bans BroScienceLife Channel',
+    date: 'Sept 1st, 2019',
+    firstParagraph: `Bro ipsum dolor sit amet shreddin nose press brain bucket heli brain bucket corn free ride frontside face plant roadie taco glove. Butter gnar gear jammer epic jib pow. Whistler chowder dust on crust bomb hole, hammerhead flow rail. Skinny greasy Whistler sketching clipless.`,
+    secondParagraph: `Piste pipe air flow hot dogging travel noodle presta death cookies ollie poaching huckfest twister dirtbag. Whistler roadie afterbang rock-ectomy. Skid pipe corn, pillow popping stunt stomp trail swag couloir groomer chillax back country cork dope chain ring grab. Granny gear hot dogging bonk, schwag shuttle Whistler whip grind yard sale wheels flow.`,
+    thirdParagraph: `Butter single track pow bonk dirtbag sketching wheelie caballerial chain ring wack line skinny gear jammer slash. Misty fatty reverse camber ride back country, daffy huck. Epic flow liftie, spin taco glove trail swag huckfest back country poaching single track whip yard sale ACL. Bail heli chowder big ring cornice betty. Booter drop air scream corduroy dust on crust. Bro frontside park slash nose dirt line manny huck schraeder pillow popping T-bar crank air.`
   }
 ];
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
   
-  <div class="article">
-    <h2>{title of the article}</h2>
-    <p class="date">{date of the article}</p>
+  <div class="article">*
+    <h2>{title of the article}</h2>*
+    <p class="date">{date of the article}</p>*
 
-    {three separate paragraph elements}
+    {three separate paragraph elements}*
 
-    <span class='expandButton'></span>
+    <span class='expandButton'></span>*
   </div>
 
   Hint: You will need to use createElement more than once here!
 
-  Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
+  Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.*
 
   Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
 
@@ -112,3 +136,72 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+//step 1 create a function that creates a componet
+function createArticle(dataObj)
+{
+  //create indiv elements. referer to above template
+  const artDiv = document.createElement('div');
+  const artH2 = document.createElement('h2');
+  const artDate = document.createElement('p');
+  const artP1 = document.createElement('p');
+  const artP2 = document.createElement('p');
+  const artP3 = document.createElement('p');
+  const artSpan = document.createElement('span');
+
+  //add classes to elements
+  artDiv.classList.add('article');
+  artDate.classList.add('date');
+  artSpan.classList.add('expandButton');
+
+  //fill in the proper text
+  //data = title, date, p1, p2, p3
+  artH2.textContent = dataObj.title;
+  artDate.textContent = dataObj.date;
+  artP1.textContent = dataObj.firstParagraph;
+  artP2.textContent = dataObj.secondParagraph;
+  artP3.textContent = dataObj.thirdParagraph;
+  artSpan.textContent = 'Click to read more';
+
+  //put the component together
+  artDiv.appendChild(artH2);
+  artDiv.appendChild(artDate);
+  artDiv.appendChild(artP1);
+  artDiv.appendChild(artP2);
+  artDiv.appendChild(artP3);
+  artDiv.appendChild(artSpan);
+
+  //event listener for articles
+  artSpan.addEventListener('click', () =>
+  {
+    artDiv.classList.toggle('article-open');
+
+    //checks to see if article-open is active to display readmore or less
+    if(artDiv.classList.contains('article-open'))
+    {
+      artSpan.textContent = "Click to read less";
+    }
+    else
+    {
+      artSpan.textContent = "Click to read more";
+    }
+  })
+  
+  //return component
+  return artDiv;
+}
+
+//put the news articles in the container div
+const articleContainer = document.querySelector('.articles');
+
+//creates a new array for the news articles to be rendered later
+const newArticleArray = data.map(dataArticle =>
+{
+  return createArticle(dataArticle);
+});
+
+//render news articles
+newArticleArray.forEach(item =>
+{
+  articleContainer.appendChild(item);
+});
